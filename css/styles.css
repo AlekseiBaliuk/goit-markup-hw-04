@@ -129,11 +129,49 @@ img {
     color: var(--accent-color);
 }
 
+.header-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.header-icon:hover {
+    fill: var(--accent-color);
+}
+
+/* .icon-mail::before {
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-image: url(../images/svg/envelope.svg);
+    background-size: contain;
+    display: inline-block;
+}
+
+.icon-phone::before {
+    content: "";
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url(../images/svg/smartphone.svg);
+    background-size: contain;
+    display: inline-block;
+} */
+
 /* Hero */
 
 .hero {
     background-color: var(--bg-color);
     padding: 200px 0;
+
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), 
+    url(../images/hero/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-title {
@@ -198,6 +236,15 @@ img {
 
 .benefits-list .benefits-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.benefits-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: var(--team-bg-color);
+    margin-bottom: 30px;
 }
 
 .benefits-title {
@@ -266,6 +313,44 @@ img {
     padding-bottom: 30px;
 }
 
+.social-networks {
+    text-align: center;
+}
+
+.icon-instagram {
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/svg/instagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.icon-twitter {
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/svg/twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.icon-facebook {
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/svg/facebook.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.icon-linkedin {
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/svg/linkedin.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
 .member-title {
     color: var(--title-color);
     font-weight: 500;
@@ -279,6 +364,7 @@ img {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 /* Portfolio filters */
@@ -396,4 +482,78 @@ img {
 
 .footer-item:not(:last-child){
     margin-bottom: 9px;
+}
+
+.footer-flex {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.social-links {
+    width: 206px;
+    margin-left: 70px;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social-text {
+    color: var(--main-white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-icon-instagram {
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/svg/footer-instagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.footer-icon-twitter {
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/svg/footer-twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.footer-icon-facebook {
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/svg/footer-facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.footer-icon-linkedin {
+    width: 44px;
+    height: 44px;
+    background-image: url(../images/svg/footer-linkedin.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: inline-block;
 }

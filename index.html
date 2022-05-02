@@ -39,10 +39,15 @@
         </nav>
 
         <ul class="nav-contacts">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <li class="item icon-mail">
+            <a class="link" href="mailto:info@devstudio.com"
+              ><svg class="header-icon" width="16" height="12">
+                <use href="./images/svg/sprite.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
-          <li class="item">
+          <li class="item icon-phone">
             <a class="link" href="tel:380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -66,25 +71,30 @@
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="benefits-list benefits">
-            <li class="benefits-item">
+            <li class="benefits-item icon-antenna">
+              <div class="benefits-thumb">
+                <svg class="benefits-icon" width="70" height="70">
+                  <use href="./images/svg/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">Внимание к деталям</h3>
               <p class="benefits-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="benefits-item">
+            <li class="benefits-item icon-clock">
               <h3 class="benefits-title">Пунктуальность</h3>
               <p class="benefits-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="benefits-item">
+            <li class="benefits-item icon-diagram">
               <h3 class="benefits-title">Планирование</h3>
               <p class="benefits-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="benefits-item">
+            <li class="benefits-item icon-astronaut">
               <h3 class="benefits-title">Современные технологии</h3>
               <p class="benefits-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -146,6 +156,12 @@
               <div class="team-info">
                 <h3 class="member-title">Игорь Демьяненко</h3>
                 <p class="member-position" lang="en">Product Designer</p>
+                <ul class="social-networks">
+                  <li class="icon-instagram"><a href=""></a></li>
+                  <li class="icon-twitter"><a href=""></a></li>
+                  <li class="icon-facebook"><a href=""></a></li>
+                  <li class="icon-linkedin"><a href=""></a></li>
+                </ul>
               </div>
             </li>
             <li class="member-item">
@@ -159,6 +175,12 @@
               <div class="team-info">
                 <h3 class="member-title">Ольга Репина</h3>
                 <p class="member-position" lang="en">Frontend Developer</p>
+                <ul class="social-networks">
+                  <li class="icon-instagram"><a href=""></a></li>
+                  <li class="icon-twitter"><a href=""></a></li>
+                  <li class="icon-facebook"><a href=""></a></li>
+                  <li class="icon-linkedin"><a href=""></a></li>
+                </ul>
               </div>
             </li>
             <li class="member-item">
@@ -172,6 +194,12 @@
               <div class="team-info">
                 <h3 class="member-title">Николай Тарасов</h3>
                 <p class="member-position" lang="en">Marketing</p>
+                <ul class="social-networks">
+                  <li class="icon-instagram"><a href=""></a></li>
+                  <li class="icon-twitter"><a href=""></a></li>
+                  <li class="icon-facebook"><a href=""></a></li>
+                  <li class="icon-linkedin"><a href=""></a></li>
+                </ul>
               </div>
             </li>
             <li class="member-item">
@@ -185,9 +213,22 @@
               <div class="team-info">
                 <h3 class="member-title">Михаил Ермаков</h3>
                 <p class="member-position" lang="en">UI Designer</p>
+                <ul class="social-networks">
+                  <li class="icon-instagram"><a href=""></a></li>
+                  <li class="icon-twitter"><a href=""></a></li>
+                  <li class="icon-facebook"><a href=""></a></li>
+                  <li class="icon-linkedin"><a href=""></a></li>
+                </ul>
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <!--Regular customers-->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Постоянные клиенты</h2>
         </div>
       </section>
     </main>
@@ -195,22 +236,37 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="./index.html">Web<span class="logo-white" lang="en">Studio</span> </a>
-        <address class="address">
-          <ul class="footer-address">
-            <li class="address-item footer-item">
-              <a class="link" href="https://goo.gl/maps/hzVvKhw79iwVWXAN9"
-                >г.Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="contact-item footer-item">
-              <a class="link" href="mailto:info@example.com">info@example.com</a>
-            </li>
-            <li class="contact-item footer-item">
-              <a class="link" href="tel:380991111111">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+        <div class="footer-flex">
+          <div class="footer-contacts-flex">
+            <a class="logo" href="./index.html"
+              >Web<span class="logo-white" lang="en">Studio</span>
+            </a>
+            <address class="address">
+              <ul class="footer-address">
+                <li class="address-item footer-item">
+                  <a class="link" href="https://goo.gl/maps/hzVvKhw79iwVWXAN9"
+                    >г.Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="contact-item footer-item">
+                  <a class="link" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="contact-item footer-item">
+                  <a class="link" href="tel:380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-links">
+            <p class="footer-social-text">присоединяйтесь</p>
+            <ul class="footer-social-list">
+              <li class="footer-icon-instagram"><a href=""></a></li>
+              <li class="footer-icon-twitter"><a href=""></a></li>
+              <li class="footer-icon-facebook"><a href=""></a></li>
+              <li class="footer-icon-linkedin"><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
