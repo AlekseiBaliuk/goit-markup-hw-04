@@ -8,6 +8,7 @@
 --team-bg-color: #F5F4FA;
 --footer-contact-color: rgba(255, 255, 255, 0.6);
 --button-hover: #188CE8;
+--icon-color: #AFB1B8;
 }
 
 body {
@@ -107,7 +108,7 @@ img {
 }
 
 .nav-contacts .item + .item {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .nav-contacts .link {
@@ -313,42 +314,31 @@ img {
     padding-bottom: 30px;
 }
 
-.social-networks {
-    text-align: center;
+.member-social-networks {
+    display: flex;
+    width: 206px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.icon-instagram {
+.member-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
-    background-image: url(../images/svg/instagram.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
+    border-radius: 50%;
+    fill: var(--icon-color);
 }
 
-.icon-twitter {
-    width: 44px;
-    height: 44px;
-    background-image: url(../images/svg/twitter.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
+.member-icon-link:hover,
+.member-icon-link:focus {
+    fill: var(--main-white-color);
+    background-color: var(--accent-color);
 }
 
-.icon-facebook {
-    width: 44px;
-    height: 44px;
-    background-image: url(../images/svg/facebook.svg);
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-
-.icon-linkedin {
-    width: 44px;
-    height: 44px;
-    background-image: url(../images/svg/linkedin.svg);
-    background-repeat: no-repeat;
-    display: inline-block;
+.member-icon-item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .member-title {
@@ -365,6 +355,32 @@ img {
     line-height: 1.18;
     text-align: center;
     margin-bottom: 16px;
+}
+
+/* Clients */
+
+.clients-thumb {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.client-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+    fill: var(--icon-color);
+}
+
+.client-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-link:hover {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /* Portfolio filters */
@@ -510,7 +526,7 @@ img {
     margin-bottom: 20px;
 }
 
-.footer-icon-instagram {
+/* .footer-icon-instagram {
     width: 44px;
     height: 44px;
     background-image: url(../images/svg/footer-instagram.svg);
@@ -556,4 +572,4 @@ img {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: inline-block;
-}
+} */
